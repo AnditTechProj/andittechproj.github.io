@@ -1,14 +1,612 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
     margin: 0;
-    padding: 80px 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    font-size: 48px;
+html {
+    scroll-behavior: smooth;
 }
 
-p {
-    font-size: 20px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #07111f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 25px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #b7ff3c;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    color: #c9d1dc;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b7ff3c;
+}
+
+.nav-button {
+    background: #b7ff3c;
+    color: #07111f;
+
+    padding: 12px 20px;
+    border-radius: 30px;
+
+    font-weight: 700;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 700px;
+
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 100px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.small-title {
+    color: #b7ff3c;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 7vw, 100px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #b7ff3c;
+}
+
+.hero-description {
+    color: #aab5c3;
+
+    font-size: 18px;
+
+    max-width: 500px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.primary-button {
+    display: inline-block;
+
+    background: #b7ff3c;
+    color: #07111f;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    display: inline-block;
+
+    border: 1px solid #334052;
+
+    padding: 14px 27px;
+
+    border-radius: 30px;
+
+    color: #ffffff;
+
+    transition: 0.3s;
+}
+
+.secondary-button:hover {
+    border-color: #b7ff3c;
+    color: #b7ff3c;
+}
+
+
+/* =========================
+   SPEED VISUAL
+========================= */
+
+.hero-visual {
+    width: 400px;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speed-circle {
+    width: 350px;
+    height: 350px;
+
+    border-radius: 50%;
+
+    border: 2px solid #b7ff3c;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 0 50px rgba(183, 255, 60, 0.15);
+}
+
+.speed-number {
+    font-size: 150px;
+
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.speed-unit {
+    color: #b7ff3c;
+
+    letter-spacing: 4px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why-us {
+    background: #0b1727;
+
+    padding: 120px 30px;
+}
+
+.section-heading {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+}
+
+.section-heading h2 {
+    font-size: clamp(40px, 5vw, 70px);
+
+    line-height: 1;
+
+    letter-spacing: -2px;
+}
+
+.section-heading h2 span {
+    color: #b7ff3c;
+}
+
+.features {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.feature-card {
+    padding: 40px;
+
+    border: 1px solid #243247;
+
+    border-radius: 20px;
+
+    background: #0d1b2d;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #b7ff3c;
+}
+
+.icon {
+    font-size: 40px;
+
+    color: #b7ff3c;
+
+    margin-bottom: 25px;
+}
+
+.feature-card h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #9ba8b8;
+}
+
+
+/* =========================
+   PLANS
+========================= */
+
+.plans {
+    padding: 120px 30px;
+
+    background: #07111f;
+}
+
+.plan-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.plan-card {
+    position: relative;
+
+    padding: 45px 35px;
+
+    border: 1px solid #26364a;
+
+    border-radius: 20px;
+
+    background: #0b1727;
+
+    transition: 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+}
+
+.plan-card.popular {
+    border: 2px solid #b7ff3c;
+}
+
+.popular-label {
+    position: absolute;
+
+    top: -14px;
+    left: 30px;
+
+    background: #b7ff3c;
+
+    color: #07111f;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.plan-name {
+    color: #b7ff3c;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+.plan-card h3 {
+    font-size: 55px;
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+.plan-card h3 span {
+    font-size: 18px;
+
+    color: #9ba8b8;
+}
+
+.plan-description {
+    color: #9ba8b8;
+
+    min-height: 60px;
+
+    margin-bottom: 25px;
+}
+
+.price {
+    font-size: 28px;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+.price span {
+    color: #8794a5;
+
+    font-size: 14px;
+
+    font-weight: 400;
+}
+
+.plan-button {
+    display: block;
+
+    text-align: center;
+
+    padding: 13px;
+
+    border: 1px solid #344256;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.plan-button:hover {
+    background: #b7ff3c;
+
+    color: #07111f;
+
+    border-color: #b7ff3c;
+}
+
+
+/* =========================
+   TESTIMONIAL
+========================= */
+
+.testimonial {
+    padding: 130px 30px;
+
+    text-align: center;
+
+    background: #0b1727;
+}
+
+.testimonial h2 {
+    max-width: 900px;
+
+    margin: auto;
+
+    font-size: clamp(40px, 5vw, 70px);
+
+    line-height: 1.05;
+}
+
+.testimonial h2 span {
+    color: #b7ff3c;
+}
+
+.customer {
+    margin-top: 30px;
+
+    color: #8f9baa;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 130px 30px;
+
+    text-align: center;
+
+    background: #b7ff3c;
+
+    color: #07111f;
+}
+
+.contact h2 {
+    font-size: clamp(45px, 6vw, 80px);
+
+    line-height: 1;
+
+    margin-bottom: 20px;
+}
+
+.contact h2 span {
+    display: block;
+}
+
+.contact p {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+.contact .primary-button {
+    background: #07111f;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+footer p {
+    color: #7f8b9a;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 80px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero-visual {
+        width: 100%;
+        height: 350px;
+    }
+
+    .speed-circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .speed-number {
+        font-size: 110px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
 }
