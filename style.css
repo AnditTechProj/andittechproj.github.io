@@ -1,6 +1,6 @@
-/* =========================
-   BASIC RESET
-========================= */
+/* =========================================
+   RESET
+========================================= */
 
 * {
     margin: 0;
@@ -14,8 +14,8 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #111111;
-    color: #ffffff;
+    background: #ffffff;
+    color: #111111;
     line-height: 1.6;
 }
 
@@ -25,16 +25,16 @@ a {
 }
 
 
-/* =========================
+/* =========================================
    NAVIGATION
-========================= */
+========================================= */
 
 .navbar {
     width: 100%;
     max-width: 1200px;
     margin: auto;
 
-    padding: 25px 30px;
+    padding: 22px 30px;
 
     display: flex;
     align-items: center;
@@ -42,9 +42,10 @@ a {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 800;
-    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #111111;
 }
 
 .logo span {
@@ -57,8 +58,9 @@ nav {
 }
 
 nav a {
-    color: #c9d1dc;
+    color: #333333;
     font-size: 15px;
+    font-weight: 600;
     transition: 0.3s;
 }
 
@@ -68,9 +70,10 @@ nav a:hover {
 
 .nav-button {
     background: #e21b23;
-    color: #111111;
+    color: #ffffff;
 
-    padding: 12px 20px;
+    padding: 12px 22px;
+
     border-radius: 30px;
 
     font-weight: 700;
@@ -80,21 +83,22 @@ nav a:hover {
 }
 
 .nav-button:hover {
+    background: #b9141a;
     transform: translateY(-2px);
 }
 
 
-/* =========================
+/* =========================================
    HERO
-========================= */
+========================================= */
 
 .hero {
-    min-height: 700px;
+    min-height: 650px;
 
     max-width: 1200px;
     margin: auto;
 
-    padding: 100px 30px;
+    padding: 80px 30px;
 
     display: flex;
     align-items: center;
@@ -104,28 +108,30 @@ nav a:hover {
 }
 
 .hero-text {
-    max-width: 650px;
+    max-width: 620px;
 }
 
 .small-title {
     color: #e21b23;
 
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 800;
 
     letter-spacing: 2px;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .hero h1 {
-    font-size: clamp(55px, 7vw, 100px);
+    color: #111111;
+
+    font-size: clamp(55px, 7vw, 95px);
 
     line-height: 0.95;
 
-    letter-spacing: -4px;
+    letter-spacing: -5px;
 
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .hero h1 span {
@@ -143,9 +149,9 @@ nav a:hover {
 }
 
 
-/* =========================
+/* =========================================
    BUTTONS
-========================= */
+========================================= */
 
 .hero-buttons {
     display: flex;
@@ -157,7 +163,7 @@ nav a:hover {
     display: inline-block;
 
     background: #e21b23;
-    color: #111111;
+    color: #ffffff;
 
     padding: 15px 28px;
 
@@ -169,32 +175,33 @@ nav a:hover {
 }
 
 .primary-button:hover {
+    background: #b9141a;
     transform: translateY(-3px);
 }
 
 .secondary-button {
     display: inline-block;
 
-    border: 1px solid #334052;
+    border: 1px solid #222222;
 
     padding: 14px 27px;
 
     border-radius: 30px;
 
-    color: #ffffff;
+    color: #111111;
 
     transition: 0.3s;
 }
 
 .secondary-button:hover {
-    border-color: #e21b23;
-    color: #e21b23;
+    background: #111111;
+    color: #ffffff;
 }
 
 
-/* =========================
-   SPEED VISUAL
-========================= */
+/* =========================================
+   HERO VISUAL
+========================================= */
 
 .hero-visual {
     width: 400px;
@@ -211,7 +218,7 @@ nav a:hover {
 
     border-radius: 50%;
 
-    border: 2px solid #e21b23;
+    border: 3px solid #e21b23;
 
     display: flex;
     flex-direction: column;
@@ -220,13 +227,15 @@ nav a:hover {
     justify-content: center;
 
     box-shadow:
-        0 0 50px rgba(183, 255, 60, 0.15);
+        0 0 40px rgba(226, 27, 35, 0.18);
 }
 
 .speed-number {
+    color: #111111;
+
     font-size: 150px;
 
-    font-weight: 800;
+    font-weight: 900;
 
     line-height: 1;
 }
@@ -237,36 +246,43 @@ nav a:hover {
     letter-spacing: 4px;
 
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 
-/* =========================
+/* =========================================
    WHY US
-========================= */
+========================================= */
 
 .why-us {
     background: #f5f5f5;
 
-    padding: 120px 30px;
+    padding: 110px 30px;
 }
 
 .section-heading {
     max-width: 1200px;
-    margin: 0 auto 60px;
+    margin: 0 auto 55px;
 }
 
 .section-heading h2 {
-    font-size: clamp(40px, 5vw, 70px);
+    color: #111111;
+
+    font-size: clamp(40px, 5vw, 68px);
 
     line-height: 1;
 
-    letter-spacing: -2px;
+    letter-spacing: -3px;
 }
 
 .section-heading h2 span {
     color: #e21b23;
 }
+
+
+/* =========================================
+   FEATURES
+========================================= */
 
 .features {
     max-width: 1200px;
@@ -281,7 +297,7 @@ nav a:hover {
 }
 
 .feature-card {
-    padding: 40px;
+    padding: 38px;
 
     border: 1px solid #dddddd;
 
@@ -290,41 +306,53 @@ nav a:hover {
     background: #ffffff;
 
     transition: 0.3s;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 
     border-color: #e21b23;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .icon {
-    font-size: 40px;
+    font-size: 38px;
 
     color: #e21b23;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .feature-card h3 {
-    font-size: 25px;
+    color: #111111;
 
-    margin-bottom: 15px;
+    font-size: 24px;
+
+    margin-bottom: 12px;
 }
 
 .feature-card p {
     color: #555555;
+
+    font-size: 15px;
 }
 
 
-/* =========================
+/* =========================================
    PLANS
-========================= */
+========================================= */
 
 .plans {
-    padding: 120px 30px;
+    padding: 110px 30px;
 
     background: #111111;
+}
+
+.plans .section-heading h2 {
+    color: #ffffff;
 }
 
 .plan-container {
@@ -342,36 +370,38 @@ nav a:hover {
 .plan-card {
     position: relative;
 
-    padding: 45px 35px;
+    padding: 40px 35px;
 
     border: 1px solid #dddddd;
 
-    border-radius: 20px;
+    border-radius: 18px;
 
-    background: #f5f5f5;
+    background: #ffffff;
 
     transition: 0.3s;
 }
 
 .plan-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 
 .plan-card.popular {
-    border: 2px solid #e21b23;
+    border: 3px solid #e21b23;
 }
 
 .popular-label {
     position: absolute;
 
-    top: -14px;
-    left: 30px;
+    top: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
 
     background: #e21b23;
 
-    color: #111111;
+    color: #ffffff;
 
-    padding: 6px 15px;
+    padding: 6px 18px;
 
     border-radius: 20px;
 
@@ -380,6 +410,8 @@ nav a:hover {
     font-weight: 800;
 
     letter-spacing: 1px;
+
+    white-space: nowrap;
 }
 
 .plan-name {
@@ -387,23 +419,25 @@ nav a:hover {
 
     font-size: 13px;
 
-    font-weight: 700;
+    font-weight: 800;
 
     letter-spacing: 2px;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .plan-card h3 {
+    color: #111111;
+
     font-size: 55px;
 
     line-height: 1;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .plan-card h3 span {
-    font-size: 18px;
+    font-size: 17px;
 
     color: #555555;
 }
@@ -417,15 +451,17 @@ nav a:hover {
 }
 
 .price {
+    color: #e21b23;
+
     font-size: 28px;
 
-    font-weight: 700;
+    font-weight: 800;
 
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .price span {
-    color: #666666;
+    color: #555555;
 
     font-size: 14px;
 
@@ -439,9 +475,11 @@ nav a:hover {
 
     padding: 13px;
 
-    border: 1px solid #cccccc;
+    border: 1px solid #222222;
 
     border-radius: 30px;
+
+    color: #111111;
 
     font-weight: 700;
 
@@ -451,18 +489,26 @@ nav a:hover {
 .plan-button:hover {
     background: #e21b23;
 
-    color: #111111;
+    color: #ffffff;
+
+    border-color: #e21b23;
+}
+
+.plan-card.popular .plan-button {
+    background: #e21b23;
+
+    color: #ffffff;
 
     border-color: #e21b23;
 }
 
 
-/* =========================
+/* =========================================
    TESTIMONIAL
-========================= */
+========================================= */
 
 .testimonial {
-    padding: 130px 30px;
+    padding: 120px 30px;
 
     text-align: center;
 
@@ -470,13 +516,17 @@ nav a:hover {
 }
 
 .testimonial h2 {
+    color: #111111;
+
     max-width: 900px;
 
     margin: auto;
 
-    font-size: clamp(40px, 5vw, 70px);
+    font-size: clamp(40px, 5vw, 65px);
 
     line-height: 1.05;
+
+    letter-spacing: -2px;
 }
 
 .testimonial h2 span {
@@ -484,24 +534,24 @@ nav a:hover {
 }
 
 .customer {
-    margin-top: 30px;
+    margin-top: 25px;
 
-    color: #8f9baa;
+    color: #555555;
 }
 
 
-/* =========================
+/* =========================================
    CONTACT
-========================= */
+========================================= */
 
 .contact {
-    padding: 130px 30px;
+    padding: 120px 30px;
 
     text-align: center;
 
     background: #e21b23;
 
-    color: #111111;
+    color: #ffffff;
 }
 
 .contact h2 {
@@ -528,10 +578,16 @@ nav a:hover {
     color: #ffffff;
 }
 
+.contact .primary-button:hover {
+    background: #ffffff;
 
-/* =========================
+    color: #111111;
+}
+
+
+/* =========================================
    FOOTER
-========================= */
+========================================= */
 
 footer {
     max-width: 1200px;
@@ -545,18 +601,24 @@ footer {
     justify-content: space-between;
 
     align-items: center;
+
+    background: #ffffff;
+}
+
+footer .logo {
+    color: #111111;
 }
 
 footer p {
-    color: #7f8b9a;
+    color: #666666;
 
     font-size: 13px;
 }
 
 
-/* =========================
+/* =========================================
    MOBILE
-========================= */
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -569,7 +631,7 @@ footer p {
     }
 
     .hero {
-        padding: 80px 20px;
+        padding: 70px 20px;
 
         flex-direction: column;
 
@@ -578,11 +640,13 @@ footer p {
 
     .hero h1 {
         font-size: 60px;
+
+        letter-spacing: -3px;
     }
 
     .hero-visual {
         width: 100%;
-        height: 350px;
+        height: 330px;
     }
 
     .speed-circle {
