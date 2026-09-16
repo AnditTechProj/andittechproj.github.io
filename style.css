@@ -94,7 +94,7 @@ nav a:hover {
 
 .hero {
     min-height: 700px;
-
+    width: 100%;
     max-width: 1200px;
     margin: auto;
 
@@ -104,12 +104,10 @@ nav a:hover {
     align-items: center;
     justify-content: flex-start;
 
-    background-color: #ffffff;
-
-    background-image: url("hero-bg.jpg");
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background: #ffffff url("hero-bg.jpg") center bottom / cover no-repeat;
+}
+.hero::before {
+    display: none;
 }
 
 .hero-text {
