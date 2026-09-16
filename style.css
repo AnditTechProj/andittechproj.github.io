@@ -677,3 +677,14 @@ footer p {
         text-align: center;
     }
 }
+/* =========================================
+   HERO TEXT POSITION
+========================================= */
+.hero {
+    align-items: flex-start;
+    padding-top: 90px;
+}
+
+.hero-text {
+    padding-top: 20px;
+}
