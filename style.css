@@ -265,7 +265,7 @@ nav a:hover {
 
 .section-heading {
     max-width: 1200px;
-    margin: 0 auto 55px;
+    margin: 0 auto 35px;
 }
 
 .section-heading h2 {
@@ -372,7 +372,7 @@ nav a:hover {
 ========================================= */
 
 .plans {
-    padding: 110px 30px;
+    padding: 75px 30px;
 
     background: #111111;
 }
@@ -534,7 +534,7 @@ nav a:hover {
 ========================================= */
 
 .testimonial {
-    padding: 120px 30px;
+    padding: 75px 30px;
 
     text-align: center;
 
@@ -571,7 +571,7 @@ nav a:hover {
 ========================================= */
 
 .contact {
-    padding: 120px 30px;
+    padding: 80px 30px;
 
     text-align: center;
 
