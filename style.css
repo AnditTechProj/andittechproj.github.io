@@ -289,14 +289,33 @@ nav a:hover {
 
 .features {
     max-width: 1200px;
-
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 
     gap: 20px;
+}
+
+.feature-card:nth-child(1) {
+    grid-column: span 2;
+}
+
+.feature-card:nth-child(2) {
+    grid-column: span 2;
+}
+
+.feature-card:nth-child(3) {
+    grid-column: span 2;
+}
+
+.feature-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.feature-card:nth-child(5) {
+    grid-column: 4 / span 2;
 }
 
 .feature-card {
@@ -624,6 +643,22 @@ footer p {
 ========================================= */
 
 @media (max-width: 800px) {
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card:nth-child(1),
+    .feature-card:nth-child(2),
+    .feature-card:nth-child(3),
+    .feature-card:nth-child(4),
+    .feature-card:nth-child(5) {
+        grid-column: auto;
+    }
+
+}
+
+{
 
     .navbar {
         padding: 20px;
