@@ -102,17 +102,11 @@ nav a:hover {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 
-    gap: 60px;
+    background-color: #ffffff;
 
-   background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.45)
-        ),
-        url("hero-bg.jpg");
-
+    background-image: url("hero-bg.jpg");
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
