@@ -319,17 +319,16 @@ nav a:hover {
 }
 
 .feature-card {
-    padding: 38px;
+    padding: 20px 22px;
 
     border: 1px solid #dddddd;
-
-    border-radius: 20px;
+    border-radius: 16px;
 
     background: #ffffff;
 
     transition: 0.3s;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
 }
 
 .feature-card:hover {
@@ -341,25 +340,30 @@ nav a:hover {
 }
 
 .icon {
-    font-size: 38px;
-
+    font-size: 32px;
     color: #e21b23;
 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
+    line-height: 1;
 }
 
 .feature-card h3 {
     color: #111111;
 
-    font-size: 24px;
+    font-size: 20px;
 
-    margin-bottom: 12px;
+    margin-bottom: 6px;
+
+    line-height: 1.2;
 }
 
 .feature-card p {
     color: #555555;
 
-    font-size: 15px;
+    font-size: 14px;
+
+    line-height: 1.4;
 }
 
 
