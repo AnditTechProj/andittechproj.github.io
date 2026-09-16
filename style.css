@@ -104,7 +104,7 @@ nav a:hover {
     align-items: center;
     justify-content: flex-start;
 
-    background: #ffffff url("hero-bg1.jpg") center bottom / cover no-repeat;
+    background: #ffffff url("hero-bg.jpg") center bottom / cover no-repeat;
 }
 .hero::before {
     display: none;
